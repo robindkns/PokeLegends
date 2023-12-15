@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./public/css/app.css"> 
+</head>
+<body>
+    <audio autoplay loop id="opening">
+        <source src="./public/img/opening.mp3" type="audio/mp3">
+    </audio>
+    <video autoplay muted loop id="bgVideo">
+        <source src="./public/img/yellowstone-pixel-moewalls-com.mp4" type="video/mp4">
+    </video>
+    <div class="title">
+        <span id="welcome">Welcome to PokeLegends</span>
+        <button id="play">Play</button>
+    </div>
+    <div class="game">
+        <div class="charactersInfo">
+            <div class="infoJinx">
+                <div class="infosLifebar">
+                    <span>Jinx</span><span id="pvJinx">100PV</span>
+                </div>
+                <div class="lifebar">
+                    <div id="lifebarJinx"></div>
+                </div>
+            </div>
+            <div class="infoVeigar">
+                <div class="infosLifebar">
+                    <span id="pvVeigar">100PV</span><span>Veigar</span>
+                </div>
+                <div class="lifebar2">
+                    <div id="lifebarVeigar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="characters">
+            <div class="jinx">
+                <img src="./public/img/jinx.gif" alt="jinx-animated" id="imgJinx">
+            </div>
+            <div class="veigar">
+                <img src="./public/img/veigar.gif" alt="veigar-animated" id="imgVeigar">
+            </div>
+        </div>
+    </div>
+    <div class="attackBox">
+        <div class="attacks">
+            <div class="attack" id="tirAuto">
+                <span><b>Tir Automatique !</b></span>
+                <div class="types">
+                    <span id="typeNormal">NORMAL</span><span>10 AD</span>
+                </div>
+            </div>
+            <div class="attack" id="zap">
+                <span><b>Zap !</b></span>
+                <div class="types">
+                    <span id="typeNormal">NORMAL</span><span>20 AD</span>
+                </div>
+            </div>
+            <div class="attack" id="canon">
+                <span><b>Canon !</b></span>
+                <div class="types">
+                    <span id="typeCritik">CRITIK</span><span>15 AD</span>
+                </div>
+            </div>  
+            <div class="attack" id="roquette">
+                <span><b>SUPER ROQUETTE DE LA MORT !</b></span>
+                <div class="types">
+                    <span id="typeCritik">CRITIK</span><span>30 AD</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./public/js/main.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

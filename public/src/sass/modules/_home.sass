@@ -1,0 +1,41 @@
+.title
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #dfcbcb
+    font-size: 40px
+    flex-direction: column
+    animation: titleDropdown 1.5s ease-in-out forwards
+
+#welcome
+    animation: titleGlow 1.5s ease-in-out infinite alternate
+
+#play
+    margin-top: 1%
+    background-color: rgba(0, 0, 0, 0.5)    
+    color: #dfcbcb
+    border-radius: 6px
+    padding-left: 2%
+    padding-right: 2%
+    animation: buttonGlow 1.5s ease-in-out infinite alternate
+    border: 2px solid rgba(0, 0, 0, 0.5)
+    &:hover
+        background-color: rgba(0, 0, 0, 0.8)
+        color: white
+
+
+@keyframes titleGlow
+    from
+        text-shadow: 0 0 10px #c06993, 0 0 20px #c06993, 0 0 30px #c06993, 0 0 40px #c06993, 0 0 50px #c06993, 0 0 60px #c06993, 0 0 70px #c06993
+
+@keyframes titleDropdown
+    0%
+        translate: 0% -100%
+    100%
+        translate: 0% 200%
+
+@keyframes titleDropUp
+    0%
+        translate: 0% 200%
+    100%
+        translate: 0% -100%

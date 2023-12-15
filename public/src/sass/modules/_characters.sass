@@ -1,0 +1,87 @@
+.game
+    display: flex
+    flex-direction: column
+    gap: 220px
+    
+.characters
+    display: flex
+    width: 100%
+
+.charactersInfo
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: #dfcbcb
+    font-size: 30px
+
+.infosLifebar
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.infoJinx
+    margin-left: -30%
+    width: 400px
+
+.infoVeigar
+    margin-right: -30%
+    width: 400px
+
+.jinx
+    translate: -100% 0%
+    width: 100%
+    display: flex
+    justify-content: center
+
+.veigar
+    translate: 100% 0%
+    width: 100%
+    display: flex
+    justify-content: center
+
+.veigarShadow
+    z-index: -1
+    position: absolute
+    height: 100px
+
+#pv
+    font-size: 20px
+
+.lifebar
+    border: 2px solid #dfcbcb
+    border-radius: 6px
+    width: 100%
+    height: 100%
+    // padding: 1.5%
+
+.lifebar2
+    border: 2px solid #dfd5cb
+    border-radius: 6px
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: flex-end
+
+#lifebarJinx
+    width: 100%
+    height: 10px
+    background-color: green
+
+#lifebarVeigar
+    width: 100%
+    height: 10px
+    background-color: green
+    
+
+
+@keyframes mortVeigar
+    0%
+        translate: 0% 0%
+    100%
+        translate: 200% 0%
+
+@keyframes mortJinx
+    0%
+        translate: 0% 0%
+    100%
+        translate: -200% 0%
